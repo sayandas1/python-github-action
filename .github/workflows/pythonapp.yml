@@ -33,8 +33,8 @@ jobs:
         pytest
     - name: Deploy to Heroku
       env:
-        HEROKU_API_TOKEN: 126729d0-e039-4bad-8b46-e8e39729bb34
-        HEROKU_APP_NAME: glacial-plains-27303-d2d8d6f5fa44
+        HEROKU_API_TOKEN: '126729d0-e039-4bad-8b46-e8e39729bb34'
+        HEROKU_APP_NAME: 'glacial-plains-27303-d2d8d6f5fa44'
       if: github.ref == 'refs/heads/master' && job.status == 'success'
       run: |
         git remote add heroku https://heroku:$HEROKU_API_TOKEN@git.heroku.com/$HEROKU_APP_NAME.git
