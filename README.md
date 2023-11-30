@@ -4,8 +4,8 @@ With GitHub Actions you can build end-to-end continuous integration (CI) and con
 
 Here are the sample git commands:
 
-git init \n
-git add file_name \n
-git commit -m "message" \n
-git push -u branch_name \n
+**git init
+git add file_name
+git commit -m "message"
+git push -u branch_name**
 
